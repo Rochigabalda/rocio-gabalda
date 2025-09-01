@@ -100,15 +100,7 @@ header {
     color: rgb(9, 75, 29);
     font-weight: bold;
 }
-p {
-    text-wrap-style:balance;
-    text-align: center;
-}
-h2 {
-    text-wrap-style:balance;
-    text-align: center;
-}
-h3{
+p, h2, h3 {
     text-wrap-style:balance;
     text-align: center;
 }
