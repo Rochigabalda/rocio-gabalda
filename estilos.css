@@ -81,9 +81,8 @@ header {
 .proyectos_imagenes_flex {
     display: flex;
     gap: 1rem;
-    text-decoration: none;
     list-style: none;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .flexbox_vermas {
     display: flex;
@@ -100,4 +99,28 @@ header {
 .behance:hover {
     color: rgb(9, 75, 29);
     font-weight: bold;
+}
+p {
+    text-wrap-style:balance;
+    text-align: center;
+}
+h2 {
+    text-wrap-style:balance;
+    text-align: center;
+}
+h3{
+    text-wrap-style:balance;
+    text-align: center;
+}
+ul {
+    text-wrap-style:balance;
+    text-align: center;
+    list-style: none;
+}
+.alinearcontactos {
+    text-align: left;
+;
+}
+.contactoalinedo {
+    text-align: left;
 }
