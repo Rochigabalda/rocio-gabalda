@@ -27,17 +27,11 @@
 body {
     font-family: poppins light, sans-serif;
     color:s #1d851daf;
-    margin: 100 px;
-    padding: 40 px;
     background-color: #f8e2eb;
 }
 
 /*aplicaciones*/
 
-h1 {
-    font-family: poppins regular, sans-serif;
-    color: darkgreen
-}
 
 h2 {
     font-family: poppins bold, sans-serif color;
@@ -49,12 +43,34 @@ h3 {
     color: darkgreen
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 16px 32px;
     background-color: rgb(240, 186, 224);
+}
+.nombreylogo {
+    display: flex;
+    align-items: center;
+}
+h1 {
+    font-family: poppins regular, sans-serif;
+    font-size: 2.5rem;
+    color: darkgreen
+}
+a {
+    text-decoration: none;  
+    color: darkgreen;
+    margin-left: 20px;
+}
+a:hover {
+    color: rgb(156, 88, 136);
 }
 .descripcion_sobremi {
     display: flex;
@@ -65,21 +81,16 @@ header {
     text-align: center;
 
 }
-.titulo_sobremi {
-    font-size: 2rem;
-    margin: 0.5rem;
-}
+
 .flexbox_sobremi {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.flexbox_educacion {
-    display: flex;
-    flex-direction: column;
-}
+
 .proyectos_imagenes_flex {
     display: flex;
+    justify-content: center;
     gap: 1rem;
     list-style: none;
     flex-wrap: wrap;
@@ -109,10 +120,8 @@ ul {
     text-align: center;
     list-style: none;
 }
-.alinearcontactos {
+.alinearcontactos, .contactoalineado {
     text-align: left;
+    margin: 0.5rem
 ;
-}
-.contactoalinedo {
-    text-align: left;
 }
