@@ -1,127 +1,169 @@
-/* CSS DOCUMENT */
-@charset "utf-8";
-
+@charset "utf-8"; /* CSS DOCUMENT */
+ 
 @font-face {
     font-family: poppins regular;
     src: url(fuentes/Poppins-Regular.ttf) format(truetype);
     font-weight: normal;
     font-style: normal;
 }
-
+ 
 @font-face {
     font-family: poppins bold;
     src: url(fuentes/Poppins-Bold.ttf) format(truetype);
     font-weight: bold;
     font-style: normal;
 }
-
+ 
 @font-face {
     font-family: poppins light;
     src: url(fuentes/Poppins-Light.ttf) format(truetype);
-    font-weight: lighter;
+    font-weight: auto;
     font-style: normal;
-
 }
-
-
-body {
-    font-family: poppins light, sans-serif;
-    color:s #1d851daf;
-    background-color: #f8e2eb;
-}
-
-/*aplicaciones*/
-
-
-h2 {
-    font-family: poppins bold, sans-serif color;
-    color: darkgreen
-}
-
-h3 {
-    font-family: poppins bold, sans-serif;
-    color: darkgreen
-}
-
+ 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 32px;
-    background-color: rgb(240, 186, 224);
+ 
+body {
+    font-family: poppins light, sans-serif;
+    color: #1d851daf;
+    background-color: #f8e2eb;
 }
-.nombreylogo {
-    display: flex;
-    align-items: center;
-}
+ 
+/*aplicaciones*/
+ 
 h1 {
     font-family: poppins regular, sans-serif;
     font-size: 2.5rem;
     color: darkgreen
 }
+ 
+h2 {
+    font-family: poppins bold, sans-serif color;
+    color: darkgreen
+}
+ 
+h3 {
+    font-family: poppins bold, sans-serif;
+    color: darkgreen
+}
+ 
 a {
-    text-decoration: none;  
+    text-decoration: none;
     color: darkgreen;
     margin-left: 20px;
 }
+ 
 a:hover {
     color: rgb(156, 88, 136);
 }
-.descripcion_sobremi {
+ 
+p, h2, h3 {
+    text-align: center;
+}
+ 
+ul {
+    text-align: center;
+    list-style: none;
+}
+ 
+header {
+    padding: 16px 32px;
+    background-color: rgb(240, 186, 224);
+    width: 100%;
+}
+ 
+header nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 35rem;
-    margin: 0.5rem;
-    text-align: center;
-
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-
-.flexbox_sobremi {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.proyectos_imagenes_flex {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    list-style: none;
-    flex-wrap: wrap;
-}
-.flexbox_vermas {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-.vermas {
-    font-size: 1.5rem;
-}
-.behance {
+ 
+header nav a {
     text-decoration: none;
-    color: rgb(156, 88, 136);
+    color: darkgreen;
+    font-size: 1.2rem;
 }
-.behance:hover {
-    color: rgb(9, 75, 29);
-    font-weight: bold;
+ 
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
-p, h2, h3 {
-    text-wrap-style:balance;
-    text-align: center;
+ 
+ 
+div.contenedor-titulo {
+    /*border: 1px solid darkgreen;*/
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(240, 186, 224);
+    border-radius: 15px;
+    box-shadow: #DDD 10px 10px 15px;
 }
-ul {
-    text-wrap-style:balance;
-    text-align: center;
-    list-style: none;
+ 
+div.contenedor-titulo div:first-child {
+    max-width: 400px;
 }
-.alinearcontactos, .contactoalineado {
+ 
+div.contenedor-titulo div:first-child p  {
     text-align: left;
-    margin: 0.5rem
-;
+}
+ 
+div.contenedor-titulo h1 {
+    margin:0;
+    padding:0;
+}
+ 
+section {
+    margin-top: 40px;
+    padding:20px;
+    background-color: rgba(240, 185, 223, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    justify-items: center;
+    border-radius: 15px;
+}
+ 
+section h2 {
+    width: 100%;
+}
+section div {
+    width: 45%;
+    text-align: center;
+}
+section article {
+    width: 100%;
+    text-align: center;
+}
+section ul {
+    width: 100%;
+    text-align: center;
+}
+section ul li {
+    font-size: 1.2rem;
+    line-height: 45px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+section ul li:hover {
+    color: rgb(240, 186, 224);
+    transform: scale(1.1);
+}
+ 
+footer {
+    padding: 16px 32px;
+    background-color: rgb(240, 186, 224);
+    width: 100%;
 }
