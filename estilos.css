@@ -1,26 +1,33 @@
 @charset "utf-8"; /* CSS DOCUMENT */
- 
+
 @font-face {
-    font-family: poppins regular;
-    src: url(fuentes/Poppins-Regular.ttf) format(truetype);
+    font-family: comba;
+    src: url(fuentes/Comba\ BoldUltraWide.ttf) format(truetype);
     font-weight: normal;
     font-style: normal;
 }
- 
+
 @font-face {
     font-family: poppins bold;
     src: url(fuentes/Poppins-Bold.ttf) format(truetype);
     font-weight: bold;
     font-style: normal;
 }
- 
+
 @font-face {
-    font-family: poppins light;
-    src: url(fuentes/Poppins-Light.ttf) format(truetype);
-    font-weight: auto;
+    font-family: poppins medium;
+    src: url(fuentes/Poppins-Medium.ttf) format(truetype);
+    font-weight: medium;
     font-style: normal;
 }
- 
+
+@font-face {
+    font-family: poppins semi bold;
+    src: url(fuentes/Poppins-SemiBold.ttf) format(truetype);
+    font-weight: bold;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
