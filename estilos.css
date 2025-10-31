@@ -95,6 +95,8 @@ nav a:hover {
     color: #e3819f;
 }
 
+
+
 /* =========================== INDEX =============================== */
 
 /* ======== MAIN ======== */
@@ -223,27 +225,64 @@ gap: 2rem;
 
 /* =========================== SOBRE MI media =============================== */
 
+/* =========================== HEADER media =============================== */
+
+@media (max-width:600px) {
+    header {
+        height: auto;
+        background-color: #e3819f;
+    }
+.contenedor_nav {
+    display: block;
+    position: static;
+    height: auto;
+    width: auto;
+    justify-content: space-between;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+}
+
+.header_abrir_nav_boton {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.header_checkbox:checked {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+
+}
+.header_abrir_nav_boton {
+display: none;
+}
+
 @media screen and (max-width: 600px) {
     .contenedor_me_llamo_rochi {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 2rem;              /* reducir padding para móviles */
-        gap: 1.5rem;
-        flex-direction: column-reverse; /* apilar y poner texto arriba del video */
+        padding: 2rem;             
+        flex-direction: column; 
     }
 
+
+    
     .contenedor_sobremi {
         display: flex;
-        width: 100%;               /* ocupar todo el ancho en móvil */
+        width: 100%;              
         flex-direction: column;
-        align-items: center;       /* centrar el contenido */
+        align-items: center;      
         gap: 1rem;
-        margin-top: 2rem;          /* separarlo del header en móvil */
+        margin-top: 2rem;         
     }
 
     .titulo_sobremi {
-        font-size: 1.8rem;         /* tamaño más apropiado para móvil */
+        font-size: 1.8rem;        
         text-align: center;
     }
 
