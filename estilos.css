@@ -54,11 +54,19 @@ header {
     padding: 15px 50px;
 }
 
-.header_logo-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;  
+.header_logo{
+    animation: girar 5s linear infinite; 
 }
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 
 .contenedor_nav {
 display: flex;
@@ -303,10 +311,11 @@ gap: 1rem;
 flex-wrap: wrap;
 padding: 2rem 0;
 list-style: none;
-transition: transform 0.25s ease, box-shadow 0.25s ease;
-will-change: transform;
-transform-origin: center center;
-border-radius: 8px;
+}
+
+.imagenes_flexbox img:hover {
+    transform: scale(1.15);
+    transition: transform 0.3s ease;
 }
 
 
