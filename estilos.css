@@ -35,6 +35,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* ======== AAPLICACIONES ======== */
@@ -52,6 +53,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .header_logo{
@@ -136,7 +141,7 @@ background-color: #FFDEE8;
 display: flex;
 align-items: center;
 justify-content: center;
-padding: 6rem;
+padding: 10rem;
 gap: 4rem;
 flex-direction: row-reverse;
 }
@@ -147,6 +152,7 @@ width: 50%;
 flex-direction: column;
 align-items: flex-start;
 gap: 1.8rem;
+margin-top: 6rem;
 }
 
 .titulo_sobremi {
@@ -164,6 +170,7 @@ width: 400px;
 
 video {
 border-radius: 20px;
+margin-top: 20px;
 }
 
 .flexbox-educacion {
@@ -216,90 +223,71 @@ gap: 2rem;
 
 /* =========================== SOBRE MI media =============================== */
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .contenedor_me_llamo_rochi {
-        flex-direction: column;
-        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;              /* reducir padding para móviles */
+        gap: 1.5rem;
+        flex-direction: column-reverse; /* apilar y poner texto arriba del video */
     }
 
     .contenedor_sobremi {
-        width: 100%;
-        align-items: center;
-        justify-content: center;
+        display: flex;
+        width: 100%;               /* ocupar todo el ancho en móvil */
+        flex-direction: column;
+        align-items: center;       /* centrar el contenido */
+        gap: 1rem;
+        margin-top: 2rem;          /* separarlo del header en móvil */
+    }
+
+    .titulo_sobremi {
+        font-size: 1.8rem;         /* tamaño más apropiado para móvil */
+        text-align: center;
     }
 
     .parrafo_sobremi {
+        font-size: 14px;
+        text-align: center;
         width: 100%;
+    }
+
+    video {
+        border-radius: 12px;
+        margin-top: 1rem;
+        width: 100%;
+        max-width: 420px;
+        height: auto;
     }
 
     .flexbox-educacion {
         flex-direction: column;
-        text-align: center
-        gap: rem;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
     }
 
-    footer {
-        flex-direction: column;
-        width: 100%;
-        margin: 0;
-        
+    .educativo, .unla {
+        align-items: center;
     }
 
-    .contenedor_footer{
-        flex-direction: column;
-        width: 100%;
-        margin: 0%;
+    .contenedor_programas {
+        padding: 4rem 0;
+        gap: 1rem;
     }
 
-    .footer_contactos{
-        flex-direction: column;
-        width: 100%;
-        margin: 0%;
-        gap: 3rem;
+    .lista_programas {
+        align-items: center;
+        gap: 1rem;
     }
 
-    .botones_contenedor{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        margin: 0%;
+    .li_programas {
+        gap: 1rem;
+        justify-content: center;
     }
-
-    .botones_footer{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        margin: 0%;
-    }
-
-    .botones_footer li {
-        font-size: 0.8rem;
-    }
-
-    .contenedor_trabajemosjuntos{
-        border: none;
-    }
-
-    .contenedor_contactos{
-        height: auto;
-        width: auto;
-    }
-    .derecha_contactos {
-        flex-direction: row;
-        gap: 20vh;
-        align-items: flex-start;
-        width: 100%;
-    }
-
-    .contenedor_derechosdeautor{
-        gap: 15vh;
-    }
-
-    .trabajemosjuntos {
-        width: auto;
-    }
-
 }
+
 
 /* =========================== PROYECTOS =============================== */
 
